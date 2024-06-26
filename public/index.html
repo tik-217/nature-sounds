@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.png" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="wthrSounds">
+      <h1 class="wthrSounds__title">Weather sounds</h1>
+      <ul class="soundModes">
+        <li class="soundModes__item">
+          <img src="./images/summer-bg.jpg" alt="sunny" />
+          <img src="./icons/sun.svg" alt="sunny" />
+        </li>
+        <li class="soundModes__item">
+          <img src="./images/rainy-bg.jpg" alt="rainy" />
+          <img src="./icons/cloud-rain.svg" alt="rainy" />
+        </li>
+        <li class="soundModes__item">
+          <img src="./images/winter-bg.jpg" alt="snowy" />
+          <img src="./icons/cloud-snow.svg" alt="snowy" />
+        </li>
+      </ul>
+      <input
+        type="range"
+        min="0"
+        max="1"
+        step="0.1"
+        class="wthrSounds__range"
+      />
+    </div>
+  </body>
+</html>
