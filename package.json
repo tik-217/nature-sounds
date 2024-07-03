@@ -6,19 +6,21 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "npx webpack serve --config webpack.config.dev.js",
-    "build": "npx webpack --config webpack.config.prod.js",
-    "build:dev": "npx webpack --config webpack.config.dev.js"
+    "start": "npx webpack serve --config webpack.config.dev.ts",
+    "build": "npx webpack --config webpack.config.prod.ts",
+    "build:dev": "npx webpack --config webpack.config.dev.ts"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@eslint/js": "^9.5.0",
+    "@types/webpack": "^5.28.5",
+    "@types/webpack-dev-server": "^4.7.2",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
-    "eslint": "^9.5.0",
+    "eslint": "^9.1.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
@@ -31,9 +33,15 @@
     "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.9"
   }
 }
