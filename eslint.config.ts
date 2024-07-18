@@ -8,7 +8,6 @@ module.exports = [
       semi: ["off"],
       "no-unused-vars": ["warn"],
     },
-    ecmaVersion: 5,
   },
   pluginJs.configs.recommended,
 ];

@@ -4,17 +4,11 @@ const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  // контекст выполнения сборки
   context: path.resolve(__dirname, "src"),
-  // точка входа приложения
   entry: "./index.js",
-  // выходные файлы
   output: {
-    // js файлы после сборки prod
     filename: "[name].[contenthash].js",
-    // папка prod сборки
     path: path.resolve(__dirname, "dist"),
-    // очистка папка dist перед наполнением
     clean: true,
   },
   module: {
